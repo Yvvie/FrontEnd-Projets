@@ -38,3 +38,39 @@ mod.addEventListener('click', () => {
 })
 
 
+// using switch
+
+function render (result) {
+  document.querySelector('#result').textContent = result;
+}
+
+document.getElementById('actions').addEventListener('click', event => {
+  if(event.target.tagName === 'BUTTON'){
+
+  let result = null
+
+  const firstNumber = Number(document.querySelector('#first-number').value)
+  const seondNumber = Number(document.querySelector('#second-number').value)
+
+    switch (event.target.id) {
+      case 'sum':
+        result = firstNumber + seondNumber
+        break;
+      case 'substraction':
+        result = firstNumber - seondNumber
+        break;
+      case 'multiply':
+        result = firstNumber * seondNumber
+        break;
+      case 'divide':
+        result = firstNumber / seondNumber
+        break;
+      case 'modulus':
+        result = firstNumber % seondNumber
+        break;
+      default:
+        break;
+    }
+    render(result);
+  }
+})
