@@ -49,24 +49,24 @@ document.getElementById('actions').addEventListener('click', event => {
 
   let result = null
 
-  const firstNumber = Number(document.querySelector('#first-number').value)
-  const seondNumber = Number(document.querySelector('#second-number').value)
+  const firstNumber = Number(document.querySelector('#Number-1').value)
+  const secondNumber = Number(document.querySelector('#Number-2').value)
 
     switch (event.target.id) {
       case 'sum':
-        result = firstNumber + seondNumber
+        result = firstNumber + secondNumber
         break;
       case 'substraction':
-        result = firstNumber - seondNumber
+        result = firstNumber - secondNumber
         break;
       case 'multiply':
-        result = firstNumber * seondNumber
+        result = firstNumber * secondNumber
         break;
       case 'divide':
-        result = firstNumber / seondNumber
+        result = firstNumber / secondNumber
         break;
       case 'modulus':
-        result = firstNumber % seondNumber
+        result = firstNumber % secondNumber
         break;
       default:
         break;
