@@ -8,33 +8,33 @@ const mod = document.getElementById('mod');
 sum.addEventListener('click', () => {
     let x = parseInt(document.getElementById('Number-1').value)
     let y = parseInt(document.getElementById('Number-2').value)
-    alert(x + y);
+    document.querySelector('#result').textContent = (x + y);
 })
 
 sub.addEventListener('click', () => {
     let x = parseInt(document.getElementById('Number-1').value)
     let y = parseInt(document.getElementById('Number-2').value)
-    alert(x - y);
+    document.querySelector('#result').textContent = (x - y);
 })
 
 div.addEventListener('click', () => {
     let x = parseInt(document.getElementById('Number-1').value)
     let y = parseInt(document.getElementById('Number-2').value)
-    alert(x / y);
+    document.querySelector('#result').textContent = (x / y);
 
 })
 
 mul.addEventListener('click', () => {
     let x = parseInt(document.getElementById('Number-1').value)
     let y = parseInt(document.getElementById('Number-2').value)
-    alert(x * y);
+    document.querySelector('#result').textContent = (x * y);
 
 })
 
 mod.addEventListener('click', () => {
     let x = parseInt(document.getElementById('Number-1').value)
     let y = parseInt(document.getElementById('Number-2').value)
-    alert(x % y);
+    document.querySelector('#result').textContent = (x % y);
 })
 
 
