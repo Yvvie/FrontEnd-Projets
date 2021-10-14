@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: linear-gradient(120deg, #a32c60, #87acd6);
+    color: antiquewhite;
+    font-family: "Poppins", sans-serif;
+    min-height: 100vh;
+}
+
+
+header, form {
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+input, button, select {
+    padding: 5px;
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+}
+
+.todos-list{
+    color: saddlebrown;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo-div {
+    margin: 5px;
+    font-size: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: seashell;
+    border: solid black 1px;
+    color: black;
+}
+
+.todos-items{
+    min-width: 30%;
+    list-style: none;
+}
+
+.todos-items li{
+    flex: 1;
+}
+
+.completed {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+.delete-button,
+.check-button{
+    color: white;
+    border: none;
+    padding: 16px;
+    cursor: pointer;
+}
+
+.delete-button{
+    background: red;
+}
+
+.check-button{
+    background: green;
+}
+
+.fa-check, .fa-trash {
+   pointer-events: none;
+}
