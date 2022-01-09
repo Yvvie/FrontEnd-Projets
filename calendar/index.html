@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Page Title</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&amp;family=Poppins:wght@200&amp;display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- calendar -->
+
+      <div id="calendar-container">
+        <div id="header">
+          <div id="monthDisplay"></div>
+          <div>
+            <button id="backButton" class="button">Back</button>
+            <button id="nextButton" class="button">Next</button>
+            <button id="addTask" class="button">Add Task</button>
+          </div>
+        </div>
+
+        <div id="weekdays">
+          <div>Monday</div>
+          <div>Tuesday</div>
+          <div>Wednesday</div>
+          <div>Thursday</div>
+          <div>Friday</div>
+          <div>Saturday</div>
+          <div>Sunday</div>
+        </div>
+
+        <div id="calendar"></div>
+      </div>
+
+      <!-- events -->
+
+      <div id="event-container">
+        <form>
+          <!-- title -->
+          <div class="form-control">
+            <label>Event title</label>
+            <input type="text" id="title" class="required" required />
+          </div>
+
+          <!-- date -->
+          <div class="form-control">
+            <label for="start">Date</label>
+            <input
+              type="date"
+              id="start"
+              name="event-start"
+              class="required"
+              required
+            />
+          </div>
+
+          <!-- start time -->
+          <div class="form-control">
+            <label for="start-time">from</label>
+            <input type="time" id="start-time" class="required" required />
+          </div>
+
+          <!-- end time -->
+          <div class="form-control">
+            <label for="end-time">To</label>
+            <input type="time" id="end-time" class="required" required />
+          </div>
+
+          <!-- event type -->
+          <div class="form-control">
+            <label for="event-type">Event type</label>
+            <select id="event-type" class="required" required>
+              <option value="meeting" style="background-color: rgb(214, 87, 87)">
+                Meeting
+              </option>
+              <option value="call" style="background-color: rgb(52, 189, 52)">Call</option>
+              <option value="out_of_office" style="background-color: rgb(224, 224, 54)">
+                Out of office
+              </option>
+            </select>
+          </div>
+
+          <!-- decrition -->
+          <div class="form-control">
+            <label for="descrition">Event description</label>
+            <input id="description" />
+
+            <!-- buttons -->
+            <button class="task-add" type="submit">Add</button>
+            <button class="close" type="button">Close</button>
+          </div>
+        </form>
+
+        <!-- events list -->
+        <div class="event-list">
+          <ul class="event-items"></ul>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* global */
+
+body {
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+}
+
+.container {
+  margin: 30px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+}
+
+button {
+  margin-top: 20px;
+  cursor: pointer;
+  box-shadow: 0px 0px 2px gray;
+  border: none;
+  outline: none;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: burlywood;
+}
+
+
+/* events style */
+
+#event-container {
+  display: flex;
+  width: 30%;
+  align-items: center;
+  margin-top: 55px;
+  position: relative;
+}
+
+.event-list {
+  display: flex;
+  margin-left: 40px;
+  width: 200px;
+}
+
+.event-div {
+  margin: 5px;
+  border: 2px solid #979595;
+  border-radius: 5px;
+  font-size: 20px;
+  max-width: 200px;
+}
+
+.event-items {
+  min-width: 300px;
+  list-style: none;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.event-items li {
+  margin: 5px;
+}
+
+.delete-button,
+.cancel-button {
+  margin-left: 5px;
+  margin-right: 5px;
+  border: none;
+  padding: 5px;
+  cursor: pointer;
+}
+
+form {
+  display: none;
+}
+
+.event-list,
+form {
+  flex-direction: column;
+  margin-left: 40px;
+}
+
+.form-control {
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.form-control label {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.form-control input,
+select {
+  border: 2px solid #979595;
+  border-radius: 4px;
+  display: block;
+  font-family: inherit;
+  font-size: 14px;
+  padding: 10px;
+  width: 100%;
+}
+
+/* calendar style */
+
+
+#header {
+  color: #420f3e;
+  font-size: 26px;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: space-between;
+}
+
+#calendar-container {
+  width: 770px;
+}
+
+#weekdays {
+  width: 100%;
+  display: flex;
+  color: #247ba0;
+}
+
+#weekdays div {
+  width: 100px;
+  padding: 10px;
+}
+
+#calendar {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.day {
+  width: 100px;
+  padding: 10px;
+  height: 100px;
+  cursor: pointer;
+  box-sizing: border-box;
+  background-color: rgb(247, 144, 216);
+  margin: 5px;
+  box-shadow: 0px 0px 3px #1b2510;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.event {
+  font-size: 10px;
+  padding: 3px;
+  background-color: #f2d8f5;
+  color: rgb(15, 9, 9);
+  border-radius: 5px;
+  max-height: 55px;
+  overflow: hidden;
+}
